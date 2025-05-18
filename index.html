@@ -4,11 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Photos du mariage de Barbara et Mathieu</title>
+
+  <!-- Import des polices -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background: linear-gradient(to bottom, #f0f8f4, #ffffff);
       color: #2e4d3c;
       display: flex;
@@ -18,10 +22,14 @@
       min-height: 100vh;
     }
 
-    .header-image {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
+    img {
+      max-width: 500px;
+      width: 90%;
+      height: auto;
+      margin-top: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      display: block;
     }
 
     .content {
@@ -30,7 +38,9 @@
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
       color: #3a5d47;
     }
@@ -42,17 +52,24 @@
     }
 
     a.button {
+      display: inline-block;
       text-decoration: none;
-      background-color: #a8d5ba;
-      color: #1e3d2f;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
+      background: linear-gradient(135deg, #88b04b, #c2d98e);
+      color: white;
+      padding: 0.75rem 2.5rem;
+      border-radius: 30px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(136,176,75,0.4);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      margin: 0 auto 2rem auto;
     }
 
     a.button:hover {
-      background-color: #92c9a9;
+      background: linear-gradient(135deg, #a1c864, #d4e3ab);
+      box-shadow: 0 6px 14px rgba(161,200,100,0.6);
     }
 
     @media (max-width: 600px) {
@@ -63,16 +80,20 @@
       p {
         font-size: 1rem;
       }
+
+      a.button {
+        font-size: 1rem;
+        padding: 0.6rem 2rem;
+      }
     }
   </style>
 </head>
 <body>
   <!-- Image de couverture : à remplacer par une version hébergée durablement -->
-<img 
-  src="https://iili.io/366eufe.png" 
+  <img 
+    src="https://iili.io/366eufe.png" 
     alt="Illustration florale style dessiné" 
-  style="max-width: 500px; width: 90%; height: auto; margin-top: 2rem; border-radius: 12px;">
-
+  >
 
   <div class="content">
     <h1>Photos du mariage de Barbara et Mathieu</h1>
@@ -80,7 +101,7 @@
       Vous pouvez partager vos meilleurs souvenirs photo via l'album ci-dessous.<br>
       Il vous faut simplement un compte Google. Merci d'avance pour vos partages !
     </p>
-    <a href="https://photos.app.goo.gl/rwEpvmMYJrCzXGHG9" class="button">Album photos</a>
+    <a href="https://photos.app.goo.gl/rwEpvmMYJrCzXGHG9" class="button" target="_blank" rel="noopener noreferrer">Album photos</a>
   </div>
 </body>
 </html>
